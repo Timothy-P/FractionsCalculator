@@ -1,4 +1,3 @@
-const main = document.getElementById("body")
 function InputLoad() {
     if (localStorage.getItem("InputLocal") != "") {
         document.InputForm.Numbers.value = localStorage.getItem("InputLocal")
