@@ -1,11 +1,91 @@
 @import url(https://fonts.googleapis.com/css2?family=Assistant);
 .text {
     font-family: Assistant;
-    color: #2F58CD;
 }
-h1-6 {
-    font-size: larger;
+.CButton {
+    background-color:blue; 
+    width: 50px;
+    font-size: 20px; 
+    border-radius: 12px; 
+    height: 50px; 
+    cursor: pointer;
 }
-p {
-    font-size: medium;
+.button {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.button2 {
+    cursor: pointer;
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.Input {
+    background-color: transparent;
+    border-color: transparent; color: white;
+    text-align: center; font-size: 40px;
+    width: 342.8px;
+    height: 55.8px; 
+    border-radius: 12px
+}
+.sidebar {
+	background-color: rgb(240,240,240)/*rgb(20, 20, 20)*/;
+	height: 20px;
+	width: var(--sidebar-width);
+	position: fixed;
+	/*padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 12px*/
+}
+.sidebar a{
+	text-decoration: none;
+	/*font-size: 12px;*/
+}
+.sidebar p {
+	padding: 5px;
+	text-align: center;
+	margin: 0px;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 17px; /*14px;*/
+}
+.sidebar a div{
+	color: black/*white*/;
+	padding: 5px;
+	padding-left: 15px;
+	/*margin-left:10px;*/
+	transition: 0.2s;
+	font-family: monospace;
+}
+.sidebar a div:hover {
+	/*background-color: var(--bg)*/
+	background-color: rgba(0,0,0,0.1)
+}
+/* Add a black background color to the top navigation */
+.topbar {
+    background-color: cadetblue;
+    overflow: hidden;
+    width: 700px;
+    height: 70.4px;
+    border-radius: 12px;
+}
+
+/* Add a color to the active/current link */
+.topbar a.active {
+    background-color: #04AA6D;
+    color: white;
 }
