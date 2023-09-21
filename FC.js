@@ -24,8 +24,14 @@ function B() {
     }
 };
 window.addEventListener("beforeunload", InputBeforeUnload())
+window.addEventListener("keypress", KeyPress())
 function FontSwitch() {
     if (Font == "Assistant") {
-        
+        //Working on later, working on something more worth the time.
+    }
+}
+function KeyPress() {
+    if (KeyboardEvent == "13") {
+        A()
     }
 }
