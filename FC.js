@@ -1,3 +1,4 @@
+var Font = "Assistant"
 function InputLoad() {
     if (localStorage.getItem("InputLocal") != "") {
         document.InputForm.Numbers.value = localStorage.getItem("InputLocal")
@@ -23,3 +24,8 @@ function B() {
     }
 };
 window.addEventListener("beforeunload", InputBeforeUnload())
+function FontSwitch() {
+    if (Font == "Assistant") {
+        
+    }
+}
