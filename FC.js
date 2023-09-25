@@ -1,5 +1,5 @@
 var Font = "Assistant"
-var Alpha
+var Alpha = "1"
 function InputLoad() {
     if (localStorage.getItem("InputLocal") != "") {
         document.InputForm.Numbers.value = localStorage.getItem("InputLocal")
@@ -34,5 +34,15 @@ function FontSwitch() {
 function KeyPress() {
     if (KeyboardEvent == "13") {
         A()
+    }
+}
+function parathe() {
+    if (Alpha == "1") {
+        document.calculator.ans.value += "("
+        Alpha = "2"
+    }
+    else {
+        document.calculator.ans.value += ")"
+        Alpha = "1"
     }
 }
