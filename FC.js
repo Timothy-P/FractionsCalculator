@@ -46,3 +46,9 @@ function parathe() {
         Alpha = "1"
     }
 }
+function DEL() {
+    $(input).val(
+        function(index, value){
+            return value.substr(0, value.length - 1);
+    })
+}
