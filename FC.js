@@ -1,4 +1,3 @@
-var Font = "Assistant"
 var Alpha = "1"
 function InputLoad() {
     if (localStorage.getItem("InputLocal") != "") {
@@ -25,17 +24,6 @@ function B() {
     }
 };
 window.addEventListener("beforeunload", InputBeforeUnload())
-window.addEventListener("keypress", KeyPress())
-function FontSwitch() {
-    if (Font == "Assistant") {
-        //Working on later, working on something more worth the time.
-    }
-}
-function KeyPress() {
-    if (KeyboardEvent == "13") {
-        A()
-    }
-}
 function parathe() {
     if (Alpha == "1") {
         document.calculator.ans.value += "("
