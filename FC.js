@@ -47,8 +47,5 @@ function parathe() {
     }
 }
 function DEL() {
-    $(input).val(
-        function(index, value){
-            return value.substr(0, value.length - 1);
-    })
+    calculator.ans.value = calculator.ans.value.slice(0, -1);
 }
