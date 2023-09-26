@@ -9,7 +9,18 @@ function InputBeforeUnload() {
 };
 function A() {
     var B = document.calculator.ans.value;
-    document.calculator.ans.value=eval(document.calculator.ans.value);
+    let display = document.calculator.ans;
+    let expression = display.value;
+    let result;
+    try {
+        expression = expression.replace(/sin\(/g, 'sin(' + Math.PI / 180 + '*');
+        expression = expression.replace(/cos\(/g, 'cos(' + Math.PI / 180 + '*');
+        expression = expression.replace(/tan\(/g, 'tan(' + Math.PI / 180 + '*');
+        result = math.evaluate(expression);
+        display.value = result;
+    } catch (error) {
+        display.value = "Error";
+    }
     var C = document.calculator.ans.value;
     const para = document.createElement("p");
     const node = document.createTextNode(B + "=" + C);
@@ -38,19 +49,5 @@ function DEL() {
     calculator.ans.value = calculator.ans.value.slice(0, -1);
 }
 function calculate() {
-    let display = document.calculator.ans;
-    let expression = display.value;
-    let result;
-
-    try {
-        // Convert trigonometric function inputs from degrees to radians
-        expression = expression.replace(/sin\(/g, 'sin(' + Math.PI / 180 + '*');
-        expression = expression.replace(/cos\(/g, 'cos(' + Math.PI / 180 + '*');
-        expression = expression.replace(/tan\(/g, 'tan(' + Math.PI / 180 + '*');
-
-        result = math.evaluate(expression);
-        display.value = result;
-    } catch (error) {
-        display.value = "Error";
-    }
+    
 }
