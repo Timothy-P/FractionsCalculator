@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="FC.css">
     <script src="FC.js"></script>
     <title>Fraction Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+    crossorigin="anonymous"referrerpolicy="no-referrer">
+    </script>
 </head>
 
     <body id="body" style="background-color: burlywood;">
@@ -41,6 +44,18 @@
                 <br>
                 <button class="button2" onclick="DEL()">
                     DEL
+                </button>
+                <button class="button2" onclick="calculator.ans.value += 'sqrt('">
+                    sqrt()
+                </button>
+                <button class="button2" onclick="calculator.ans.value += 'log('">
+                    log(
+                </button>
+                <button class="button" onclick="calculator.ans.value += 'e'">
+                    e
+                </button>
+                <button class="button" onclick="calculator.ans.value += '^('">
+                    ^
                 </button>
             </center>
         </div>
