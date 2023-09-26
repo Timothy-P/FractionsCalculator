@@ -1,11 +1,11 @@
 var Alpha = "1"
 function InputLoad() {
-    if (localStorage.getItem("InputLocal") != "") {
-        document.InputForm.Numbers.value = localStorage.getItem("InputLocal")
-    };
+    document.calculator.ans.value = localStorage.getItem("InputLocal");
+    document.getElementById("history").innerHTML = localStorage.getItem("HistoryLocal")
 };
 function InputBeforeUnload() {
-    localStorage.setItem("InputLocal", document.getElementById("ans"));
+    localStorage.setItem("InputLocal", document.calculator.ans.value);
+    localStorage.setItem("HistoryLocal", document.getElementById("history"))
 };
 function A() {
     var B = document.calculator.ans.value;
