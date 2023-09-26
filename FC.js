@@ -38,7 +38,7 @@ function DEL() {
     calculator.ans.value = calculator.ans.value.slice(0, -1);
 }
 function calculate() {
-    let display = document.getElementById("display");
+    let display = document.calculator.ans;
     let expression = display.value;
     let result;
 
