@@ -7,14 +7,6 @@ function InputBeforeUnload() {
     localStorage.setItem("InputLocal", document.calculator.ans.value);
     localStorage.setItem("HistoryLocal", document.getElementById("history").innerHTML)
 };*/
-function InputLoad() {
-    if (localStorage.getItem("InputLocal") != "") {
-        document.InputForm.Numbers.value = localStorage.getItem("InputLocal")
-    };
-};
-function InputBeforeUnload() {
-    localStorage.setItem("InputLocal", document.getElementById("ans"));
-};
 function A() {
     var B = document.calculator.ans.value;
     let display = document.calculator.ans;
