@@ -5,7 +5,7 @@ function InputLoad() {
 };
 function InputBeforeUnload() {
     localStorage.setItem("InputLocal", document.calculator.ans.value);
-    localStorage.setItem("HistoryLocal", document.getElementById("history"))
+    localStorage.setItem("HistoryLocal", document.getElementById("history").innerHTML)
 };
 function A() {
     var B = document.calculator.ans.value;
