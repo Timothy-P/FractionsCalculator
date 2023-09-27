@@ -49,6 +49,6 @@ function DEL() {
     calculator.ans.value = calculator.ans.value.slice(0, -1);
 }
 function EOF() {
-    var EOFV = window.open("", "MsgWindow", "width=auto,height=auto");
+    var EOFV = window.open("", "MsgWindow", "width=200,height=200");
     EOFV.document.write(calculator.ans.value);
 }
