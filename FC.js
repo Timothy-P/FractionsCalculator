@@ -34,7 +34,7 @@ function B() {
         element.removeChild(element.firstChild);
     }
 };
-window.addEventListener("beforeunload", InputBeforeUnload())
+//window.addEventListener("beforeunload", InputBeforeUnload())
 function parathe() {
     if (Alpha == "1") {
         document.calculator.ans.value += "("
