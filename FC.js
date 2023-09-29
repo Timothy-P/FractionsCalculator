@@ -1,11 +1,11 @@
 var Alpha = "1"
 function InputLoad() {
     document.calculator.ans.value = localStorage.getItem("InputLocal");
-    //document.getElementById("history").innerHTML = localStorage.getItem("HistoryLocal")
+    document.getElementById("history").innerHTML = localStorage.getItem("HistoryLocal")
 };
 function InputBeforeUnload() {
     localStorage.setItem("InputLocal", document.calculator.ans.value);
-    //localStorage.setItem("HistoryLocal", document.getElementById("history").innerHTML)
+    localStorage.setItem("HistoryLocal", document.getElementById("history").innerHTML)
 };
 function A() {
     var B = document.calculator.ans.value;
@@ -34,7 +34,8 @@ function B() {
         element.removeChild(element.firstChild);
     }
 };
-window.addEventListener("beforeunload", InputBeforeUnload())
+window.addEventListener("beforeunload", InputBeforeUnload)
+window.addEventListener("load", InputLoad)
 function parathe() {
     if (Alpha == "1") {
         document.calculator.ans.value += "("
@@ -52,3 +53,6 @@ function DEL() {
     var EOFV = window.open("", "MsgWindow", "width=200,height=200");
     EOFV.document.write(calculator.ans.value);
 }*/
+function Tribute() {
+    alert("Thank u/thulefanden for fixing the history issues because I couldn\'t understand it for the longest time. (Thank you r/HTML community!!!)")
+}
