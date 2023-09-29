@@ -16,7 +16,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: #D4AFB9;
+    background-color: #f3722c;
     border-radius: 12px;
     text-align: center;
     font-size: 40px;
@@ -26,7 +26,7 @@
     display: inline-block;
     width: auto;
     height: 50px;
-    background-color: #DCE1E9;
+    background-color: #f3722c;
     border-radius: 12px;
     text-align: center;
     font-size: 40px;
@@ -103,4 +103,7 @@
 .body-text {
     margin-left: 150px;
     font-size: 18px;
+}
+div {
+    background-color: #f8961e;
 }
