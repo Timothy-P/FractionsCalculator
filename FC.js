@@ -54,5 +54,6 @@ function DEL() {
     EOFV.document.write(calculator.ans.value);
 }*/
 function Tribute() {
-    alert("Thank u/thulefanden for fixing the history issues because I couldn\'t understand it for the longest time. (Thank you r/HTML community!!!)")
+    alert("Thank u/thulefanden for fixing the history issues because I couldn\'t understand it for the longest time. (Thank you r/HTML community!!!)");
+    document.getElementById("goodman").innerHTML = "This is a page deticated to a teacher that I previously had. <br> This project is far from finished and it'll probably be what I'm working on for a while."
 }
