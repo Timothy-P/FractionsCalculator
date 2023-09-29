@@ -1,12 +1,12 @@
 var Alpha = "1"
-/*function InputLoad() {
+function InputLoad() {
     document.calculator.ans.value = localStorage.getItem("InputLocal");
-    document.getElementById("history").innerHTML = localStorage.getItem("HistoryLocal")
+    //document.getElementById("history").innerHTML = localStorage.getItem("HistoryLocal")
 };
 function InputBeforeUnload() {
     localStorage.setItem("InputLocal", document.calculator.ans.value);
-    localStorage.setItem("HistoryLocal", document.getElementById("history").innerHTML)
-};*/
+    //localStorage.setItem("HistoryLocal", document.getElementById("history").innerHTML)
+};
 function A() {
     var B = document.calculator.ans.value;
     let display = document.calculator.ans;
@@ -34,7 +34,7 @@ function B() {
         element.removeChild(element.firstChild);
     }
 };
-//window.addEventListener("beforeunload", InputBeforeUnload())
+window.addEventListener("beforeunload", InputBeforeUnload())
 function parathe() {
     if (Alpha == "1") {
         document.calculator.ans.value += "("
