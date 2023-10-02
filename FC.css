@@ -71,22 +71,14 @@
 	font-family: monospace;
 }
 .sidebar a div:hover {
-	/*background-color: var(--bg)*/
 	background-color: rgba(0,0,0,0.1)
 }
-/* Add a black background color to the top navigation */
 .topbar {
     background-color: cadetblue;
     overflow: hidden;
     width: 700px;
     height: 70.4px;
     border-radius: 12px;
-}
-
-/* Add a color to the active/current link */
-.topbar a.active {
-    background-color: #04AA6D;
-    color: white;
 }
 .sidebarR {
     height: 100%;
