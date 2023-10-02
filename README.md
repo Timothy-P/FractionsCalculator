@@ -3,3 +3,4 @@ This project is made for a teacher that I respect dearly. I sent him a form to f
 
 GitHub published page:
 Never coming, too difficult because I probably don't have the required resources.
+Status: Finished. I'm not too happy with the color pallet, but it'll have to do since I'm not to well-versed in colors.
